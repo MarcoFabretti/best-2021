@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>BestOf2021</title>
+	</head>
+	<body>
+		<h1 th:text="'Best of 2021 by ' + ${nome}"></h1 >
+		<div>
+		<ul>
+			<li>
+				<a th:href="@{'/songs/'}" th:text="Song"></a>
+			</li>
+			<li>
+				<a th:href="@{'/films/'}"  th:text="Films"></a>
+			</li>
+		</ul>
+		</div>
+	</body>
+</html>
